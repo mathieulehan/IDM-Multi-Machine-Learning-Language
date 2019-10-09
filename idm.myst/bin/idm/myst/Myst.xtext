@@ -1,0 +1,9 @@
+grammar idm.myst.Myst with org.eclipse.xtext.common.Terminals
+
+generate myst "http://www.myst.idm/Myst"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
